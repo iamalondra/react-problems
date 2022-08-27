@@ -23,8 +23,7 @@ export default function SearchFilter() {
   };
 
   const searchFilter = (li) =>
-    !formData.search ||
-    li.toLowerCase().includes(formData.search.toLowerCase());
+    !formData.search || li.toLowerCase().includes(formData.search.toLowerCase());
 
   return (
     <form>

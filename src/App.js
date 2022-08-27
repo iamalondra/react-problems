@@ -3,6 +3,7 @@ import './App.css';
 import SearchFilter from './problems/SearchFilter';
 import SimpleCounter from './problems/SimpleCounter';
 import DisplayList from './problems/DisplayList/DisplayList';
+import Accordion from './problems/Accordion/Accordion';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <SearchFilter /> 
       <SimpleCounter />
       <DisplayList />
+      <Accordion />
     </div>
   );
 }

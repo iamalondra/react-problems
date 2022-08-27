@@ -1,0 +1,19 @@
+.hidden{
+  /* visibility: hidden; */
+  height: 0px;
+  transition: height 0.15s ease-out;
+  overflow: hidden;
+}
+
+.display-list{
+  /* transition-property: all;
+  transition-duration: 10s; */
+  transition: height 0.5s linear;
+  height: 300px;
+  overflow: hidden;
+}
+
+.rotate{
+  transform: rotate(180deg);
+  display: inline-block;
+}

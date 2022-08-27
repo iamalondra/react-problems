@@ -6,7 +6,7 @@ The following are the steps to create a Search filter using React JS:
 1. Declare React states for search input values.
 2. Create HTML input text for entering search term and update state in onChange function.
 3. Add Array.filter() on list of items with search term value.
-
+![alt text](https://contactmentor.com/wp-content/uploads/2021/06/filterList9.gif)
 # Simple counter exercise
 Creating a simple counter using React which increments or decrements count dynamically on-screen as the user clicks on the button. This exercise requires knowledge of fundamental React concepts such as State, Component, etc.
 

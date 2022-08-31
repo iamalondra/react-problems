@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './ImageSlider.css'
 
 export default function ImageSlider({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,7 +35,7 @@ export default function ImageSlider({ slides }) {
   const handleTransition = () => {
    const interval = setInterval(() => {
      handleNext()
-    }, 1000 * 10)
+    }, 1000 * 3)
     return interval;
   }
 
@@ -50,7 +51,7 @@ export default function ImageSlider({ slides }) {
       <div
         style={{
           whiteSpace:'nowrap',
-          transition:`all ${currentIndex === 0? 0 : 2}s ease-out`,
+          transition:`right ${currentIndex === 0? 0 : 0}s ease-out 2s`,
           position:'relative',
           right: `${400*currentIndex}px`,
         }}
@@ -61,12 +62,11 @@ export default function ImageSlider({ slides }) {
             src={slide.url}
             alt={slide.title}
             style={{
-              //border: currentIndex === index ? "2px solid green" : "",
-              //visibility: currentIndex !== index ? "hidden" : "",
               padding:'25px',
               width: "350px",
               height: "350px",
             }}
+            className={currentIndex === index? "fadeIn" : "fadeOut"}
           />
         ))}
       </div>

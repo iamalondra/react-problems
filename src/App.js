@@ -4,7 +4,7 @@ import SearchFilter from './problems/SearchFilter';
 import SimpleCounter from './problems/SimpleCounter';
 import DisplayList from './problems/DisplayList/DisplayList';
 import Accordion from './problems/Accordion/Accordion';
-import ImageSlider from './problems/ImageSlider'
+import ImageSlider from './problems/ImageSlider/ImageSlider'
 
 
 const slides = [

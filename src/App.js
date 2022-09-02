@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import SearchFilter from './problems/SearchFilter';
 import SimpleCounter from './problems/SimpleCounter';
 import DisplayList from './problems/DisplayList/DisplayList';
 import Accordion from './problems/Accordion/Accordion';
 import ImageSlider from './problems/ImageSlider/ImageSlider'
-
+import CheckList from './problems/CheckList';
 
 const slides = [
   {url:'https://media.distractify.com/brand-img/IPJP2rGdp/768x402/walterthedog-1592229773475.jpg', title:'Walter'},
@@ -19,11 +18,12 @@ const slides = [
 function App() {
   return (
     <div className="App">
-      <SearchFilter /> 
+      {/* <SearchFilter /> 
       <SimpleCounter />
       <DisplayList />
       <Accordion />
-      <ImageSlider slides={slides}/> 
+      <ImageSlider slides={slides}/>  */}
+      <CheckList />
     </div>
   );
 }
